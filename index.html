@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobeTrek - Travel Platform</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="brand-logo">GlobeTrek</div>
+        <nav class="nav-container">
+            <ul class="nav-list" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Explore</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#support">Support</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="hero-box">
+            <h1>Discover Your Next Journey</h1>
+            <p>Find breathtaking locations and create unforgettable memories with our curated guides.</p>
+            <a href="#destinations" class="primary-btn">Start Exploring</a>
+        </div>
+    </section>
+
+    <div class="filter-wrapper">
+        <input type="text" id="destinationSearch" placeholder="Search by destination name or keyword...">
+    </div>
+
+    <section id="categories" class="section-block">
+        <h2>Top Categories</h2>
+        <div class="grid-box category-layout">
+            <div class="item-card"><i class="fas fa-water"></i> Beaches</div>
+            <div class="item-card"><i class="fas fa-mountain"></i> Mountains</div>
+            <div class="item-card"><i class="fas fa-monument"></i> Culture</div>
+            <div class="item-card"><i class="fas fa-compass"></i> Adventure</div>
+        </div>
+    </section>
+
+    <section id="destinations" class="section-block">
+        <h2>Featured Locations</h2>
+        <div class="grid-box destination-layout" id="destinationContainer">
+            
+            <!-- 1. United Kingdom (London) -->
+            <div class="dest-box" data-keyword="london uk heritage city united kingdom">
+                <div class="img-container" style="background-image: url('https://picsum.photos/id/1040/500/300');"></div>
+                <div class="dest-details">
+                    <h3>London, United Kingdom</h3>
+                    <p class="location-tag"><i class="fas fa-map-pin"></i> United Kingdom</p>
+                    <p class="desc-text">A historic global city famous for Big Ben, rich culture, and royal heritage.</p>
+                    <button class="action-btn">View Details</button>
+                </div>
+            </div>
+
+            <!-- 2. Turkey (Istanbul) -->
+            <div class="dest-box" data-keyword="istanbul turkey culture heritage">
+                <div class="img-container" style="background-image: url('https://picsum.photos/id/1039/500/300');"></div>
+                <div class="dest-details">
+                    <h3>Istanbul, Turkey</h3>
+                    <p class="location-tag"><i class="fas fa-map-pin"></i> Turkey</p>
+                    <p class="desc-text">A magical city bridging two continents, known for stunning mosques and bazaars.</p>
+                    <button class="action-btn">View Details</button>
+                </div>
+            </div>
+
+            <!-- 3. Pakistan (Hunza Valley) -->
+            <div class="dest-box" data-keyword="hunza pakistan alpine mountains">
+                <div class="img-container" style="background-image: url('https://picsum.photos/id/1069/500/300');"></div>
+                <div class="dest-details">
+                    <h3>Hunza Valley, Pakistan</h3>
+                    <p class="location-tag"><i class="fas fa-map-pin"></i> Pakistan</p>
+                    <p class="desc-text">Breathtaking mountain peaks, serene lakes, and unmatched natural hospitality.</p>
+                    <button class="action-btn">View Details</button>
+                </div>
+            </div>
+
+            <!-- 4. Italy (Amalfi Coast) -->
+            <div class="dest-box" data-keyword="amalfi italy coastal">
+                <div class="img-container" style="background-image: url('https://picsum.photos/id/1043/500/300');"></div>
+                <div class="dest-details">
+                    <h3>Amalfi Coast, Italy</h3>
+                    <p class="location-tag"><i class="fas fa-map-pin"></i> Italy</p>
+                    <p class="desc-text">A stunning stretch of coastline with colorful cliffside villages and blue seas.</p>
+                    <button class="action-btn">View Details</button>
+                </div>
+            </div>
+
+            <!-- 5. Germany (Berlin) -->
+            <div class="dest-box" data-keyword="berlin germany heritage city">
+                <div class="img-container" style="background-image: url('https://picsum.photos/id/1074/500/300');"></div>
+                <div class="dest-details">
+                    <h3>Berlin, Germany</h3>
+                    <p class="location-tag"><i class="fas fa-map-pin"></i> Germany</p>
+                    <p class="desc-text">A vibrant cultural hub renowned for its art scene, history, and iconic landmarks.</p>
+                    <button class="action-btn">View Details</button>
+                </div>
+            </div>
+
+            <!-- 6. Japan (Kyoto) -->
+            <div class="dest-box" data-keyword="kyoto japan heritage">
+                <div class="img-container" style="background-image: url('https://picsum.photos/id/250/500/300');"></div>
+                <div class="dest-details">
+                    <h3>Kyoto, Japan</h3>
+                    <p class="location-tag"><i class="fas fa-map-pin"></i> Japan</p>
+                    <p class="desc-text">Famous for its classical Buddhist temples, traditional gardens, and imperial palaces.</p>
+                    <button class="action-btn">View Details</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="support" class="section-block light-bg">
+        <h2>GlobeTrek</h2>
+        <p class="support-text">We connect adventurous souls with extraordinary destinations worldwide, ensuring smooth trip planning and reliable travel information.</p>
+    </section>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 GlobeTrek Platform. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
